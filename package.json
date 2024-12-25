@@ -1,0 +1,45 @@
+{
+  "name": "get-terraform-latest-version",
+  "description": "A GitHub Action to get the latest Terraform version.",
+  "author": "waniji",
+  "version": "1.0.0",
+  "scripts": {
+    "format:write": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint",
+    "local-action": "local-action . src/main.ts .env",
+    "package": "ncc build src/index.ts -o dist --source-map --license licenses.txt"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waniji/get-terraform-latest-version.git"
+  },
+  "keywords": [
+    "actions",
+    "node"
+  ],
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "semver": "^7.6.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@github/local-action": "^2.2.1",
+    "@types/node": "^22.10.2",
+    "@types/semver": "^7.5.8",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@vercel/ncc": "^0.38.3",
+    "eslint": "^9.17.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "prettier-eslint": "^16.3.0",
+    "tsx": "^4.19.2",
+    "typescript-eslint": "^8.18.2"
+  }
+}

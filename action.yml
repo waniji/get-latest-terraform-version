@@ -1,0 +1,17 @@
+name: 'Get Terraform latest version'
+description: 'A GitHub Action to get the latest Terraform version.'
+author: 'waniji'
+
+inputs:
+  include_prerelease:
+    description: 'Include prerelease version'
+    required: true
+    default: false
+
+outputs:
+  latest_version:
+    description: 'Terraform latest version'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
