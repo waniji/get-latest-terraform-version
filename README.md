@@ -1,12 +1,12 @@
-# get-terraform-latest-version
+# get-latest-terraform-version
 
 A GitHub Action to get the latest Terraform version.
 
 ## Usage
 
 ```yaml
-- uses: waniji/get-terraform-latest-version@v1
-  id: terraform_latest_version
+- uses: waniji/get-latest-terraform-version@v1
+  id: latest_terraform_version
   with:
     # Include prerelease version.
     # (e.g. 1.11.0-alpha20241218)
@@ -15,7 +15,7 @@ A GitHub Action to get the latest Terraform version.
     include_prerelease: false
 
 - name: Print latest version
-  run: echo "${{ steps.terraform_latest_version.outputs.latest_version }}"
+  run: echo "${{ steps.latest_terraform_version.outputs.latest_version }}"
 ```
 
 ## License

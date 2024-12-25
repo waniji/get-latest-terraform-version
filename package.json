@@ -1,5 +1,5 @@
 {
-  "name": "get-terraform-latest-version",
+  "name": "get-latest-terraform-version",
   "description": "A GitHub Action to get the latest Terraform version.",
   "author": "waniji",
   "version": "1.0.0",
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waniji/get-terraform-latest-version.git"
+    "url": "git+https://github.com/waniji/get-latest-terraform-version.git"
   },
   "keywords": [
     "actions",
