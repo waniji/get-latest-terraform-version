@@ -4,7 +4,7 @@ A GitHub Action to get the latest Terraform version.
 
 ## Usage
 
-```
+```yaml
 - uses: waniji/get-terraform-latest-version@v1
   with:
     # Include prerelease version.
@@ -16,4 +16,5 @@ A GitHub Action to get the latest Terraform version.
 
 ## License
 
-The scripts and documentation in this project are released under the [MIT License](LICENSE)
+The scripts and documentation in this project are released under the
+[MIT License](LICENSE)
